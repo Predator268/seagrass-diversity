@@ -1,0 +1,70 @@
+[1] "Bray-Curtis distance regressed against spatial distance (Multiple regression on matrices) (All Samples):"
+$coef
+              dist.otu_full       pval
+Int            9.064921e-01 0.99789979
+dist.geo_full  1.097126e-07 0.00010001
+
+$r.squared
+        R2       pval 
+0.03807463 0.00010001 
+
+$F.test
+           F       F.pval 
+1.106862e+03 1.000100e-04 
+
+[1] "Bray-Curtis distance regressed against spatial distance (Multiple regression on matrices) (Leaf Samples):"
+$coef
+             dist.otu_Le       pval
+Int         7.529875e-01 0.77377738
+dist.geo_Le 2.926885e-07 0.00010001
+
+$r.squared
+        R2       pval 
+0.12960046 0.00010001 
+
+$F.test
+         F     F.pval 
+2.4583e+02 1.0001e-04 
+
+[1] "Bray-Curtis distance regressed against spatial distance (Multiple regression on matrices) (Rhizome Samples):"
+$coef
+             dist.otu_Rh       pval
+Int         8.821191e-01 0.97679768
+dist.geo_Rh 5.612189e-08 0.03950395
+
+$r.squared
+        R2       pval 
+0.01074800 0.03950395 
+
+$F.test
+          F      F.pval 
+18.56789177  0.03950395 
+
+[1] "Bray-Curtis distance regressed against spatial distance (Multiple regression on matrices) (Root Samples):"
+$coef
+             dist.otu_Ro       pval
+Int         7.158727e-01 0.00010001
+dist.geo_Ro 4.271865e-07 0.00010001
+
+$r.squared
+        R2       pval 
+0.35626431 0.00010001 
+
+$F.test
+           F       F.pval 
+978.46882405   0.00010001 
+
+[1] "Bray-Curtis distance regressed against spatial distance (Multiple regression on matrices) (Sediment Samples):"
+$coef
+             dist.otu_So       pval
+Int         6.601846e-01 0.01160116
+dist.geo_So 4.609672e-07 0.00010001
+
+$r.squared
+        R2       pval 
+0.26804578 0.00010001 
+
+$F.test
+           F       F.pval 
+647.45160633   0.00010001 
+

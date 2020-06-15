@@ -1,0 +1,60 @@
+[1] "Checking assumption of homogeneity of multivariate dispersion according to Structure in Cyrene:"
+[1] Checking assumption of homogeneity of multivariate dispersion according to Structure in Cyrene:
+Analysis of Variance Table
+
+Response: Distances
+          Df  Sum Sq  Mean Sq F value    Pr(>F)    
+Groups     3 0.33752 0.112506  7.0061 0.0008204 ***
+Residuals 35 0.56204 0.016058                      
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+[1] "Checking assumption of homogeneity of multivariate dispersion according to Structure in Merambong Shoal:"
+[1] Checking assumption of homogeneity of multivariate dispersion according to Structure in Merambong Shoal:
+Analysis of Variance Table
+
+Response: Distances
+          Df  Sum Sq  Mean Sq F value  Pr(>F)   
+Groups     3 0.21933 0.073109  5.0281 0.00517 **
+Residuals 36 0.52344 0.014540                   
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+[1] "Checking assumption of homogeneity of multivariate dispersion according to Structure in Port Dickson:"
+[1] Checking assumption of homogeneity of multivariate dispersion according to Structure in Port Dickson:
+Analysis of Variance Table
+
+Response: Distances
+          Df  Sum Sq  Mean Sq F value    Pr(>F)    
+Groups     3 0.49241 0.164137  24.063 1.011e-08 ***
+Residuals 36 0.24556 0.006821                      
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+[1] "Checking assumption of homogeneity of multivariate dispersion according to Structure in Semakau:"
+[1] Checking assumption of homogeneity of multivariate dispersion according to Structure in Semakau:
+Analysis of Variance Table
+
+Response: Distances
+          Df  Sum Sq  Mean Sq F value    Pr(>F)    
+Groups     3 0.94663 0.315544  35.903 6.441e-11 ***
+Residuals 36 0.31640 0.008789                      
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+[1] "Checking assumption of homogeneity of multivariate dispersion according to Structure in Sentosa:"
+[1] Checking assumption of homogeneity of multivariate dispersion according to Structure in Sentosa:
+Analysis of Variance Table
+
+Response: Distances
+          Df  Sum Sq  Mean Sq F value    Pr(>F)    
+Groups     3 0.61084 0.203613  34.833 1.779e-10 ***
+Residuals 34 0.19874 0.005845                      
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+[1] "Checking assumption of homogeneity of multivariate dispersion according to Structure in Perhentian Island:"
+[1] Checking assumption of homogeneity of multivariate dispersion according to Structure in Perhentian Island:
+Analysis of Variance Table
+
+Response: Distances
+          Df  Sum Sq Mean Sq F value    Pr(>F)    
+Groups     3 0.69624 0.23208  31.748 3.248e-10 ***
+Residuals 36 0.26316 0.00731                      
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1

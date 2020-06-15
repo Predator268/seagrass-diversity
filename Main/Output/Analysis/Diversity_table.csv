@@ -1,0 +1,238 @@
+,Location,Structure,Shannon
+CY01_EA_Le,Cyrene,Leaf,1.13413849290884
+CY01_EA_Rh,Cyrene,Rhizome,2.36462802232125
+CY01_EA_Ro,Cyrene,Root,3.13809713038561
+CY01_EA_So,Cyrene,Sediment,5.10100553193818
+CY02_EA_Le,Cyrene,Leaf,0.711429962173577
+CY02_EA_Rh,Cyrene,Rhizome,0.370550003143313
+CY02_EA_Ro,Cyrene,Root,2.84358429054243
+CY02_EA_So,Cyrene,Sediment,5.20969051075603
+CY03_EA_Le,Cyrene,Leaf,1.42861106876363
+CY03_EA_Rh,Cyrene,Rhizome,0.459398714468679
+CY03_EA_Ro,Cyrene,Root,3.11476996584608
+CY03_EA_So,Cyrene,Sediment,5.26233421340044
+CY04_EA_Le,Cyrene,Leaf,1.00900266390346
+CY04_EA_Rh,Cyrene,Rhizome,3.27606015281876
+CY04_EA_Ro,Cyrene,Root,3.26704546202401
+CY04_EA_So,Cyrene,Sediment,5.56174249878221
+CY05_EA_Le,Cyrene,Leaf,0.679681062243904
+CY05_EA_Rh,Cyrene,Rhizome,1.75356664847322
+CY05_EA_Ro,Cyrene,Root,3.29599627238807
+CY05_EA_So,Cyrene,Sediment,4.83381150479095
+CY06_EA_Le,Cyrene,Leaf,0.829357184789872
+CY06_EA_Rh,Cyrene,Rhizome,1.90710677739405
+CY06_EA_Ro,Cyrene,Root,2.43795679852109
+CY06_EA_So,Cyrene,Sediment,4.86394308970905
+CY07_EA_Rh,Cyrene,Rhizome,2.2081605581856
+CY07_EA_Ro,Cyrene,Root,3.14060114683546
+CY07_EA_So,Cyrene,Sediment,4.96258771695447
+CY08_EA_Le,Cyrene,Leaf,1.58463723244087
+CY08_EA_Rh,Cyrene,Rhizome,0.209098965211883
+CY08_EA_Ro,Cyrene,Root,2.61940173433921
+CY08_EA_So,Cyrene,Sediment,1.61216389833252
+CY09_EA_Le,Cyrene,Leaf,0.777968674790783
+CY09_EA_Rh,Cyrene,Rhizome,2.40422396759161
+CY09_EA_Ro,Cyrene,Root,2.59659869131039
+CY09_EA_So,Cyrene,Sediment,5.34041206393744
+CY10_EA_Le,Cyrene,Leaf,0.511740073417409
+CY10_EA_Rh,Cyrene,Rhizome,0.86054078152986
+CY10_EA_Ro,Cyrene,Root,3.18432944687324
+CY10_EA_So,Cyrene,Sediment,5.15275500804522
+MShoal_EA_Le_01,Merambong Shoal,Leaf,3.01896624354365
+MShoal_EA_Le_02,Merambong Shoal,Leaf,2.66213032398168
+MShoal_EA_Le_03,Merambong Shoal,Leaf,2.82846251089205
+MShoal_EA_Le_04,Merambong Shoal,Leaf,2.44382627460455
+MShoal_EA_Le_05,Merambong Shoal,Leaf,2.64824157529979
+MShoal_EA_Le_06,Merambong Shoal,Leaf,2.95840634649995
+MShoal_EA_Le_07,Merambong Shoal,Leaf,3.12878057781349
+MShoal_EA_Le_08,Merambong Shoal,Leaf,2.7306909768352
+MShoal_EA_Le_09,Merambong Shoal,Leaf,2.96960928957545
+MShoal_EA_Le_10,Merambong Shoal,Leaf,2.95736640443315
+MShoal_EA_Rh_01,Merambong Shoal,Rhizome,1.47444092641622
+MShoal_EA_Rh_02,Merambong Shoal,Rhizome,2.84527989499447
+MShoal_EA_Rh_03,Merambong Shoal,Rhizome,3.16572868810447
+MShoal_EA_Rh_04,Merambong Shoal,Rhizome,2.08843706373168
+MShoal_EA_Rh_05,Merambong Shoal,Rhizome,3.28490861719637
+MShoal_EA_Rh_06,Merambong Shoal,Rhizome,3.54593365066551
+MShoal_EA_Rh_07,Merambong Shoal,Rhizome,2.75101356257732
+MShoal_EA_Rh_08,Merambong Shoal,Rhizome,3.43850065456951
+MShoal_EA_Rh_09,Merambong Shoal,Rhizome,1.80641890856041
+MShoal_EA_Rh_10,Merambong Shoal,Rhizome,2.53237232871371
+Mshoal_EA_Ro_01,Merambong Shoal,Root,3.44226040068287
+Mshoal_EA_Ro_02,Merambong Shoal,Root,3.45528337968501
+Mshoal_EA_Ro_03,Merambong Shoal,Root,3.32506974974416
+Mshoal_EA_Ro_04,Merambong Shoal,Root,3.46713167497538
+Mshoal_EA_Ro_05,Merambong Shoal,Root,3.34709018509313
+Mshoal_EA_Ro_06,Merambong Shoal,Root,1.97791202971687
+Mshoal_EA_Ro_07,Merambong Shoal,Root,3.38470405676342
+Mshoal_EA_Ro_08,Merambong Shoal,Root,4.00922810434524
+Mshoal_EA_Ro_09,Merambong Shoal,Root,3.81254757168673
+Mshoal_EA_Ro_10,Merambong Shoal,Root,3.83437323940993
+Mshoal_EA_So_01,Merambong Shoal,Sediment,5.2908113202417
+Mshoal_EA_So_02,Merambong Shoal,Sediment,4.03499039596365
+Mshoal_EA_So_03,Merambong Shoal,Sediment,4.16322704345023
+Mshoal_EA_So_04,Merambong Shoal,Sediment,4.17471341801357
+Mshoal_EA_So_05,Merambong Shoal,Sediment,5.12250438906671
+Mshoal_EA_So_06,Merambong Shoal,Sediment,3.52696363102171
+Mshoal_EA_So_07,Merambong Shoal,Sediment,4.74854405458196
+Mshoal_EA_So_08,Merambong Shoal,Sediment,3.42098577089484
+Mshoal_EA_So_09,Merambong Shoal,Sediment,2.73584287776877
+Mshoal_EA_So_10,Merambong Shoal,Sediment,2.57019898639497
+PD_EA_Le_01,Port Dickson,Leaf,2.53279460300183
+PD_EA_Le_02,Port Dickson,Leaf,1.87507469289013
+PD_EA_Le_03,Port Dickson,Leaf,2.27802896266335
+PD_EA_Le_04,Port Dickson,Leaf,2.10703218810985
+PD_EA_Le_05,Port Dickson,Leaf,1.59994441030392
+PD_EA_Le_06,Port Dickson,Leaf,1.177796923544
+PD_EA_Le_07,Port Dickson,Leaf,2.49584903588769
+PD_EA_Le_08,Port Dickson,Leaf,2.59886342035631
+PD_EA_Le_09,Port Dickson,Leaf,2.06055503612633
+PD_EA_Le_10,Port Dickson,Leaf,2.78400562086546
+PD_EA_Rh_01,Port Dickson,Rhizome,1.76055846453926
+PD_EA_Rh_02,Port Dickson,Rhizome,2.36048710420551
+PD_EA_Rh_03,Port Dickson,Rhizome,2.73688714685767
+PD_EA_Rh_04,Port Dickson,Rhizome,3.4216618437143
+PD_EA_Rh_05,Port Dickson,Rhizome,2.50888530138071
+PD_EA_Rh_06,Port Dickson,Rhizome,3.08163902780342
+PD_EA_Rh_07,Port Dickson,Rhizome,3.36226655636075
+PD_EA_Rh_08,Port Dickson,Rhizome,2.20537113118835
+PD_EA_Rh_09,Port Dickson,Rhizome,3.31231493780872
+PD_EA_Rh_10,Port Dickson,Rhizome,2.61260980107001
+PD_EA_Ro_01,Port Dickson,Root,1.95542802374964
+PD_EA_Ro_02,Port Dickson,Root,2.5114871380211
+PD_EA_Ro_03,Port Dickson,Root,2.25366069823375
+PD_EA_Ro_04,Port Dickson,Root,2.28382431267778
+PD_EA_Ro_05,Port Dickson,Root,2.66770291277691
+PD_EA_Ro_06,Port Dickson,Root,2.74648974124359
+PD_EA_Ro_07,Port Dickson,Root,2.75318579265492
+PD_EA_Ro_08,Port Dickson,Root,2.08510214000418
+PD_EA_Ro_09,Port Dickson,Root,3.24924705781796
+PD_EA_Ro_10,Port Dickson,Root,3.14011385377199
+PD_EA01_So,Port Dickson,Sediment,5.70409243860091
+PD_EA02_So,Port Dickson,Sediment,5.49370555936339
+PD_EA03_So,Port Dickson,Sediment,5.47985934692294
+PD_EA04_So,Port Dickson,Sediment,5.41327603012242
+PD_EA05_So,Port Dickson,Sediment,5.49152119613307
+PD_EA06_So,Port Dickson,Sediment,5.43438357985143
+PD_EA07_So,Port Dickson,Sediment,5.57925690719755
+PD_EA08_So,Port Dickson,Sediment,5.20344885240056
+PD_EA09_So,Port Dickson,Sediment,5.20991355847072
+PD_EA10_So,Port Dickson,Sediment,5.41864342508105
+Sem_EA_Le_01,Semakau,Leaf,1.65597778622405
+Sem_EA_Le_02,Semakau,Leaf,2.06289470926585
+Sem_EA_Le_03,Semakau,Leaf,1.6879600391866
+Sem_EA_Le_04,Semakau,Leaf,1.16923911522081
+Sem_EA_Le_05,Semakau,Leaf,1.01523205609097
+Sem_EA_Le_06,Semakau,Leaf,1.68911886681986
+Sem_EA_Le_07,Semakau,Leaf,1.71945650403765
+Sem_EA_Le_08,Semakau,Leaf,0.84084919913626
+Sem_EA_Le_09,Semakau,Leaf,0.51050763878977
+Sem_EA_Le_10,Semakau,Leaf,1.33859012731628
+Sem_EA_Rh_01,Semakau,Rhizome,2.51549351173414
+Sem_EA_Rh_02,Semakau,Rhizome,1.69983338891739
+Sem_EA_Rh_03,Semakau,Rhizome,1.59255544990263
+Sem_EA_Rh_04,Semakau,Rhizome,1.71977814293707
+Sem_EA_Rh_05,Semakau,Rhizome,1.58811419418502
+Sem_EA_Rh_06,Semakau,Rhizome,1.39568351798664
+Sem_EA_Rh_07,Semakau,Rhizome,2.44906651890159
+Sem_EA_Rh_08,Semakau,Rhizome,0.893275162214913
+Sem_EA_Rh_09,Semakau,Rhizome,2.38784057629576
+Sem_EA_Rh_10,Semakau,Rhizome,2.18191633261162
+Sem_EA_Ro_01,Semakau,Root,3.53156391556458
+Sem_EA_Ro_02,Semakau,Root,2.45341166104764
+Sem_EA_Ro_03,Semakau,Root,3.36010750575265
+Sem_EA_Ro_04,Semakau,Root,3.44412265359056
+Sem_EA_Ro_05,Semakau,Root,3.06042225167805
+Sem_EA_Ro_06,Semakau,Root,2.38984906085088
+Sent_EA_Le_01,Sentosa,Leaf,1.94569299564455
+Sent_EA_Le_02,Sentosa,Leaf,2.2133375243512
+Sent_EA_Le_03,Sentosa,Leaf,1.70364452176182
+Sent_EA_Le_04,Sentosa,Leaf,2.22756497442114
+Sent_EA_Le_05,Sentosa,Leaf,2.67229972340499
+Sent_EA_Le_06,Sentosa,Leaf,1.51954442389482
+Sent_EA_Le_07,Sentosa,Leaf,1.43028868309157
+Sent_EA_Le_09,Sentosa,Leaf,1.528707763415
+Sent_EA_Le_10,Sentosa,Leaf,1.94404469042551
+Sent_EA_Rh_01,Sentosa,Rhizome,2.73493250178956
+Sent_EA_Rh_02,Sentosa,Rhizome,2.50280322963139
+Sent_EA_Rh_03,Sentosa,Rhizome,3.2891936746506
+Sent_EA_Rh_04,Sentosa,Rhizome,3.08507657498326
+Sent_EA_Rh_05,Sentosa,Rhizome,1.55057386158005
+Sent_EA_Rh_06,Sentosa,Rhizome,2.86288090927602
+Sent_EA_Rh_07,Sentosa,Rhizome,2.32453158867156
+Sent_EA_Rh_08,Sentosa,Rhizome,2.07370687172331
+Sent_EA_Rh_10,Sentosa,Rhizome,0.913633497479045
+Sent_EA_Ro_01,Sentosa,Root,3.08714463429992
+Sent_EA_Ro_02,Sentosa,Root,3.28690957290986
+Sent_EA_Ro_03,Sentosa,Root,2.83500108637036
+Sent_EA_Ro_04,Sentosa,Root,3.16003190586926
+Sent_EA_Ro_05,Sentosa,Root,2.0216270253938
+Sent_EA_Ro_06,Sentosa,Root,3.65749024827678
+Sent_EA_Ro_07,Sentosa,Root,2.59206075473144
+Sent_EA_Ro_08,Sentosa,Root,3.5070067016894
+Sent_EA_Ro_09,Sentosa,Root,2.88919500598954
+Sent_EA_Ro_10,Sentosa,Root,2.9951741219215
+Sent_EA_So_01,Sentosa,Sediment,5.11948726663632
+Sent_EA_So_02,Sentosa,Sediment,5.30184401812708
+Sent_EA_So_03,Sentosa,Sediment,5.50690415307003
+Sent_EA_So_04,Sentosa,Sediment,5.28358672743046
+Sent_EA_So_05,Sentosa,Sediment,5.54813209249891
+Sent_EA_So_06,Sentosa,Sediment,5.53880118798599
+Sent_EA_So_07,Sentosa,Sediment,5.47810702122918
+Sent_EA_So_08,Sentosa,Sediment,5.4630868406314
+Sent_EA_So_09,Sentosa,Sediment,5.43232257386048
+Sent_EA_So_10,Sentosa,Sediment,5.52137045660852
+Per_EA_Le_01,Perhentian Island,Leaf,0.468116142263052
+Per_EA_Le_02,Perhentian Island,Leaf,2.05350248381412
+Per_EA_Le_03,Perhentian Island,Leaf,1.24480136814672
+Per_EA_Le_04,Perhentian Island,Leaf,1.98611667047458
+Per_EA_Le_05,Perhentian Island,Leaf,2.27446501189233
+Per_EA_Le_06,Perhentian Island,Leaf,0.942068367708522
+Per_EA_Le_07,Perhentian Island,Leaf,0.697377442766297
+Per_EA_Le_08,Perhentian Island,Leaf,1.78968301597412
+Per_EA_Le_09,Perhentian Island,Leaf,2.25657285580087
+Per_EA_Le_10,Perhentian Island,Leaf,0.73359464257134
+Per_EA_Rh_01,Perhentian Island,Rhizome,1.42225829920791
+Per_EA_Rh_02,Perhentian Island,Rhizome,3.36353308298145
+Per_EA_Rh_03,Perhentian Island,Rhizome,3.24966159177885
+Per_EA_Rh_04,Perhentian Island,Rhizome,2.49090649957055
+Per_EA_Rh_05,Perhentian Island,Rhizome,3.51505726724547
+Per_EA_Rh_06,Perhentian Island,Rhizome,2.24903523625311
+Per_EA_Rh_07,Perhentian Island,Rhizome,3.16419444728436
+Per_EA_Rh_08,Perhentian Island,Rhizome,3.53656904274211
+Per_EA_Rh_09,Perhentian Island,Rhizome,2.29784489499929
+Per_EA_Rh_10,Perhentian Island,Rhizome,2.84220420798283
+Per_EA_Ro_01,Perhentian Island,Root,1.01077244902256
+Per_EA_Ro_02,Perhentian Island,Root,0.962045827931387
+Per_EA_Ro_03,Perhentian Island,Root,1.69536847933824
+Per_EA_Ro_04,Perhentian Island,Root,1.19441754279296
+Per_EA_Ro_05,Perhentian Island,Root,1.31118260051702
+Per_EA_Ro_06,Perhentian Island,Root,1.65059994567849
+Per_EA_Ro_07,Perhentian Island,Root,1.02862103563009
+Per_EA_Ro_08,Perhentian Island,Root,2.40454306232589
+Per_EA_Ro_09,Perhentian Island,Root,2.10320778168117
+Per_EA_Ro_10,Perhentian Island,Root,1.81302527589941
+Per_EA_So_01,Perhentian Island,Sediment,2.77371601271956
+Per_EA_So_02,Perhentian Island,Sediment,2.66943486013136
+Per_EA_So_03,Perhentian Island,Sediment,2.72873908453483
+Per_EA_So_04,Perhentian Island,Sediment,3.39342174898305
+Per_EA_So_05,Perhentian Island,Sediment,3.2768461025359
+Per_EA_So_06,Perhentian Island,Sediment,2.68168744939105
+Per_EA_So_07,Perhentian Island,Sediment,3.36061780294401
+Per_EA_So_08,Perhentian Island,Sediment,3.55864018332915
+Per_EA_So_09,Perhentian Island,Sediment,2.94460529279292
+Per_EA_So_10,Perhentian Island,Sediment,3.63576666029001
+Sem_EA_Ro_07,Semakau,Root,3.22747129122114
+Sem_EA_Ro_08,Semakau,Root,2.82099321374173
+Sem_EA_Ro_09,Semakau,Root,3.29183856212352
+Sem_EA_Ro_10,Semakau,Root,1.75227093161056
+Sem_EA_So_01,Semakau,Sediment,6.35504156110553
+Sem_EA_So_02,Semakau,Sediment,6.35054771688442
+Sem_EA_So_03,Semakau,Sediment,6.37580946794697
+Sem_EA_So_04,Semakau,Sediment,6.41830999786544
+Sem_EA_So_05,Semakau,Sediment,6.25561591152297
+Sem_EA_So_06,Semakau,Sediment,6.27841742052788
+Sem_EA_So_07,Semakau,Sediment,5.87856147823902
+Sem_EA_So_08,Semakau,Sediment,6.04885145300251
+Sem_EA_So_09,Semakau,Sediment,6.16063861711437
+Sem_EA_So_10,Semakau,Sediment,6.1430251757425

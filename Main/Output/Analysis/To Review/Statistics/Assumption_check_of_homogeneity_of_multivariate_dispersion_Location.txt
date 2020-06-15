@@ -1,0 +1,40 @@
+[1] "Checking assumption of homogeneity of multivariate dispersion according to Location in Leaf:"
+[1] Checking assumption of homogeneity of multivariate dispersion according to Location in Leaf:
+Analysis of Variance Table
+
+Response: Distances
+          Df  Sum Sq  Mean Sq F value    Pr(>F)    
+Groups     5 0.41931 0.083863  7.3262 2.927e-05 ***
+Residuals 52 0.59525 0.011447                      
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+[1] "Checking assumption of homogeneity of multivariate dispersion according to Location in Rhizome:"
+[1] Checking assumption of homogeneity of multivariate dispersion according to Location in Rhizome:
+Analysis of Variance Table
+
+Response: Distances
+          Df  Sum Sq  Mean Sq F value    Pr(>F)    
+Groups     5 0.17684 0.035369  5.0014 0.0007962 ***
+Residuals 53 0.37481 0.007072                      
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+[1] "Checking assumption of homogeneity of multivariate dispersion according to Location in Root:"
+[1] Checking assumption of homogeneity of multivariate dispersion according to Location in Root:
+Analysis of Variance Table
+
+Response: Distances
+          Df  Sum Sq  Mean Sq F value    Pr(>F)    
+Groups     5 0.35168 0.070337   8.134 8.909e-06 ***
+Residuals 54 0.46695 0.008647                      
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+[1] "Checking assumption of homogeneity of multivariate dispersion according to Location in Sediment:"
+[1] Checking assumption of homogeneity of multivariate dispersion according to Location in Sediment:
+Analysis of Variance Table
+
+Response: Distances
+          Df  Sum Sq  Mean Sq F value  Pr(>F)  
+Groups     5 0.15625 0.031251  2.5739 0.03684 *
+Residuals 54 0.65564 0.012141                  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1

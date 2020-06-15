@@ -1,9 +1,0 @@
-> summary(sample_summaries)
-   samples             raw_seqs      prefiltered_seqs adaptorremoved_seqs primerremoved_seqs padlinkerremoved_seqs fractionOfRawDataInFinal_seqs
- Length:110         Min.   : 28235   Min.   : 27926   Min.   : 27926      Min.   : 27441     Min.   : 27441        Min.   :0.9719               
- Class :character   1st Qu.:194550   1st Qu.:192443   1st Qu.:192443      1st Qu.:192437     1st Qu.:192437        1st Qu.:0.9872               
- Mode  :character   Median :218788   Median :216263   Median :216263      Median :216263     Median :216263        Median :0.9899               
-                    Mean   :234778   Mean   :232489   Mean   :232489      Mean   :232479     Mean   :232479        Mean   :0.9897               
-                    3rd Qu.:257908   3rd Qu.:254790   3rd Qu.:254790      3rd Qu.:254790     3rd Qu.:254790        3rd Qu.:0.9936               
-                    Max.   :571867   Max.   :568030   Max.   :568030      Max.   :568028     Max.   :568028        Max.   :0.9964               
-> 
