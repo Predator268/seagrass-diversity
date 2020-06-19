@@ -6,8 +6,6 @@ library(dplyr)
 library(gridExtra)
 library(ggpubr)
 library(broom)
-#library(stargazer)
-#library(sjPlot)
 library(RColorBrewer)
 library(RgoogleMaps)
 library(metagMisc)
@@ -19,15 +17,15 @@ library(VennDiagram)
 library(indicspecies)
 library(geosphere)
 library(ecodist)
-library(SpiecEasi)
-library(Matrix)
-library(reshape2)
-library(tidygraph)
-library(tidyverse)
-library(igraph)
-library(WGCNA)
-library(corncob)
-source("https://raw.githubusercontent.com/genomewalker/osd2014_analysis/master/osd2014_16S_asv/lib/graph_lib.R")
+#library(SpiecEasi)
+#library(Matrix)
+#library(reshape2)
+#library(tidygraph)
+#library(tidyverse)
+#library(igraph)
+#library(WGCNA)
+#library(corncob)
+#source("https://raw.githubusercontent.com/genomewalker/osd2014_analysis/master/osd2014_16S_asv/lib/graph_lib.R")
 
 
 
@@ -56,19 +54,6 @@ names(seqs_16S) <- 1:length(seqs_16S) # save seqs and IDs combination
 taxa_names(ps) <- names(seqs_16S)
 tax_table(ps)[1:5, 1:6]
 
-# quick exploratory look at top families by location
-top20 <- names(sort(taxa_sums(ps), decreasing=TRUE))[1:20]
-ps.top20 <- transform_sample_counts(ps, function(OTU) OTU/sum(OTU))
-ps.top20 <- prune_taxa(top20, ps.top20)
-ps.islands = prune_samples(ps.top20@sam_data$Location != "",ps.top20)
-top20_barplot_location <- plot_bar(ps.top20, x="Location", fill="Family")
-ggsave(top20_barplot_location, filename = "../Output/Analysis/Top 20 Bacterial Families by Location - Bar Plot.png", dpi=300, width = 12, height = 10)
-
-# quick exploratory look at top families by structure
-ps.structure = prune_samples(ps.top20@sam_data$Structure.DNA.Extracted.from != "",ps.top20)
-top20_barplot_structure <- plot_bar(ps.top20, x="Structure.DNA.Extracted.from", fill="Family")
-ggsave(top20_barplot_structure, filename = "../Output/Analysis/Top 20 Bacterial Families by Structure - Bar Plot.png", dpi=300, width = 12, height = 10)
-
 # Visualizing Locations
 meta <- ps@sam_data
 par(pty="s")
@@ -87,7 +72,7 @@ legend(170, 450, legend = names(col_location)[c(-3,-6)], col = "black", pt.bg = 
 dev.off()
 
 
-# Removing less prevalent sequences
+## Removing less prevalent sequences
 # Compute prevalence of each feature, store as data.frame
 prevdf = apply(X = otu_table(ps),
                MARGIN = ifelse(taxa_are_rows(ps), yes = 1, no = 2),
@@ -152,7 +137,7 @@ ps1ra <- transform_sample_counts(ps1, function(otu){otu/sum(otu)})
 
 
 
-### Rarefaction Curves
+### Rarefaction Curves ###
 grp <- factor(ps1@sam_data$Structure.DNA.Extracted.from)
 cols <- col_structure[grp]
 rarefaction_curve <- rarecurve(ps1@otu_table, step = 20, col = col, label = TRUE)
@@ -173,51 +158,7 @@ dev.off()
 
 
 
-# Plot abundance function ####
-plot_abundance = function(physeq,title = "", 
-                          Facet = "Order", Color = "Phylum"){
-  # Arbitrary subset, based on Phylum, for plotting
-  p1f = physeq
-  mphyseq = psmelt(p1f)
-  mphyseq <- subset(mphyseq, Abundance > 0)
-  ggplot(data = mphyseq, mapping = aes_string(x = "Structure.DNA.Extracted.from",y = "Abundance",
-                                              color = Color, fill = Color)) +
-    geom_violin(fill = NA) +
-    geom_point(size = 1, alpha = 0.3,
-               position = position_jitter(width = 0.3)) +
-    facet_wrap(facets = Facet) + scale_y_log10()+
-    theme(legend.position="none")
-}
-
-# abundance before and after normalization
-plotBefore = plot_abundance(ps1,"") + ggtitle("Before Normalization") + theme(axis.text.x = element_text(angle = 75, hjust = 1))
-ggsave(plotBefore, filename = "../Output/Analysis/Abundance_before_norm.png", dpi= 300, width = 12, height = 10)
-plotAfter = plot_abundance(ps1ra,"") + ggtitle("After Relative") + theme(axis.text.x = element_text(angle = 75, hjust = 1))
-ggsave(plotAfter, filename = "../Output/Analysis/Abundance_after_norm.png", dpi=300, width = 12, height = 10)
-
-# Make final figure of relative abundance of phyla by Location ####
-# Arbitrary subset, based on Phylum, for plotting
-
-mphyseq = psmelt(ps1ra)
-mphyseq <- subset(mphyseq, Abundance > 0)
-
-relabundplot = ggplot(data = mphyseq, mapping = aes_string(x = "Structure.DNA.Extracted.from",y = "Abundance",
-                                                           color = "Phylum")) +
-  geom_violin(fill = NA) +
-  geom_point(size = 1, alpha = 0.3,
-             position = position_jitter(width = 0.3)) +
-  facet_wrap(facets = "Phylum") + scale_y_log10()+
-  theme_bw() + theme(legend.position="none") + 
-  labs(x="Structure.DNA.Extracted.from",y="Relative Abundance") +
-  theme(axis.text.x = element_text(angle = 75, hjust = 1, size = 8)) 
-
-ggsave(relabundplot, filename = "../Output/Analysis/Phylum_relabund_by_Structure.png",dpi=300)
-
-
-
-
-
-### Relative Abundance Bar Plots by Location and Structure
+### Relative Abundance Bar Plots by Location and Structure ###
 
 # Creating a dataframe of the otu table which also includes the Location and Structure variables
 combineddf <- as.data.frame(ps1@otu_table)
@@ -774,7 +715,7 @@ NMDS_by_structure_and_ell <- ggarrange(p_NMDS_ell_Le, p_NMDS_ell_Rh, p_NMDS_ell_
 ggsave(NMDS_by_structure_and_ell, filename = "../Output/Analysis/NMDS by Structure with Ellipses.svg", dpi = 300, width = 12, height = 10)
 
 
-# Stress Plots
+# Stress Plots for NMDS by Structure
 par(mfrow = c(2,2))
 stressplot(NMDS_Le, title("Leaf"), pch = 16, p.col = col_structure[1], l.col = "red", lwd = 3)
 stressplot(NMDS_Rh, title("Rhizome"), pch = 16, p.col = col_structure[2], l.col = "red", lwd = 3)
@@ -907,21 +848,21 @@ sink(NULL)
 
 ### Indicspecies ###
 
-#Preparing data for multipatt
+## Preparing data for multipatt
 otutable <- as.data.frame(otu_table(ps1ra))
 taxtable <- as.data.frame(tax_table(ps1ra))
 meta <- as.data.frame(sam_data(ps1ra))
 
-#Checking NAs
+# Checking NAs
 sum(is.na(taxtable$Genus))
 
-#Removing NAs
+# Removing NAs
 otutable_no_NA <- otutable[,!is.na(taxtable$Genus)]
 taxtable_no_NA <- taxtable[!is.na(taxtable$Genus),]
 sum(is.na(taxtable_no_NA$Genus)) #verifying
 
 ## Comparison between structures and between location
-#Converting Structure column to numeric
+# Converting Structure column to numeric
 structures <- as.factor(meta$Structure.DNA.Extracted.from)
 structure_levels <- levels(structures)
 locations <- as.factor(meta$Location)
@@ -993,7 +934,7 @@ options(max.print=1000)
 ## Group 1 (Leaf)
 # indicators()
 sc <- indicators(X=communityData, cluster=structureID_vector, group = 1,
-                 max.order = 3, verbose = TRUE, 
+                 max.order = 1, verbose = TRUE, 
                  At=0.5, Bt=0.2,
                  #nboot.ci = 1000,
 )
@@ -1002,7 +943,7 @@ summary(sc)
 ## pruneindicators
 sc2=pruneindicators(sc, At=0.8, Bt=0.2, verbose=TRUE)
 print(sc2)
-sink("../Output/Analysis/IndicSpecies.txt")
+sink("../Output/Analysis/IndicSpecies_final.txt")
 noquote("Leaf Indicator Species")
 print(sc2)
 sink(NULL)
@@ -1014,7 +955,7 @@ data.frame(Group2 = structureID_vector, Prob=p, Prob_CV = pcv)
 ## Group 2 (Rhizome)
 # indicators()
 sc <- indicators(X=communityData, cluster=structureID_vector, group = 2,
-                 max.order = 3, verbose = TRUE, 
+                 max.order = 1, verbose = TRUE, 
                  At=0.5, Bt=0.2,
                  #nboot.ci = 1000,
                  )
@@ -1023,7 +964,7 @@ summary(sc)
 ## pruneindicators
 sc2=pruneindicators(sc, At=0.8, Bt=0.2, verbose=TRUE)
 print(sc2)
-sink("../Output/Analysis/IndicSpecies.txt", append=TRUE)
+sink("../Output/Analysis/IndicSpecies_final.txt", append=TRUE)
 noquote("Rhizome Indicator Species")
 print(sc2)
 sink(NULL)
@@ -1035,7 +976,7 @@ data.frame(Group2 = structureID_vector, Prob=p, Prob_CV = pcv)
 ## Group 3 (Root)
 # indicators()
 sc <- indicators(X=communityData, cluster=structureID_vector, group = 3,
-                 max.order = 3, verbose = TRUE, 
+                 max.order = 1, verbose = TRUE, 
                  At=0.5, Bt=0.2,
                  #nboot.ci = 1000,
 )
@@ -1044,7 +985,7 @@ summary(sc)
 ## pruneindicators
 sc2=pruneindicators(sc, At=0.8, Bt=0.2, verbose=TRUE)
 print(sc2)
-sink("../Output/Analysis/IndicSpecies.txt", append=TRUE)
+sink("../Output/Analysis/IndicSpecies_final.txt", append=TRUE)
 noquote("Root Indicator Species")
 print(sc2)
 sink(NULL)
@@ -1056,7 +997,7 @@ data.frame(Group2 = structureID_vector, Prob=p, Prob_CV = pcv)
 ## Group 4 (Sediment)
 # indicators()
 sc <- indicators(X=communityData, cluster=structureID_vector, group = 4,
-                 max.order = 3, verbose = TRUE, 
+                 max.order = 1, verbose = TRUE, 
                  At=0.5, Bt=0.2,
                  #nboot.ci = 1000,
 )
@@ -1065,7 +1006,7 @@ summary(sc)
 ## pruneindicators
 sc2=pruneindicators(sc, At=0.8, Bt=0.2, verbose=TRUE)
 print(sc2)
-sink("../Output/Analysis/IndicSpecies.txt", append=TRUE)
+sink("../Output/Analysis/IndicSpecies_final.txt", append=TRUE)
 noquote("Sediment Indicator Species")
 print(sc2)
 sink(NULL)
@@ -1078,7 +1019,7 @@ data.frame(Group2 = structureID_vector, Prob=p, Prob_CV = pcv)
 ## Group 1 (Cyrene)
 # indicators()
 sc <- indicators(X=communityData, cluster=locationID_vector, group = 1,
-                 max.order = 3, verbose = TRUE, 
+                 max.order = 1, verbose = TRUE, 
                  At=0.5, Bt=0.2,
                  #nboot.ci = 1000,
 )
@@ -1087,7 +1028,7 @@ summary(sc)
 ## pruneindicators
 sc2=pruneindicators(sc, At=0.8, Bt=0.2, verbose=TRUE)
 print(sc2)
-sink("../Output/Analysis/IndicSpecies.txt", append=TRUE)
+sink("../Output/Analysis/IndicSpecies_final.txt", append=TRUE)
 noquote("Cyrene Indicator Species")
 print(sc2)
 sink(NULL)
@@ -1096,164 +1037,111 @@ p <- predict(sc2, communityData)
 pcv <- predict(sc2, cv=TRUE)
 data.frame(Group2 = locationID_vector, Prob=p, Prob_CV = pcv)
 
-
-
-## Alternate Steps for IndicSpecies
-
-## Indicspecies pre-steps----
-#Preparing data for multipatt
-otutable <- as.data.frame(otu_table(ps1))
-taxtable <- as.data.frame(tax_table(ps1))
-meta <- as.data.frame(sam_data(ps1))
-
-#Checking NAs
-sum(is.na(taxtable$Genus))
-
-#Removing NAs
-otutable_no_NA <- otutable[,!is.na(taxtable$Genus)]
-taxtable_no_NA <- taxtable[!is.na(taxtable$Genus),]
-sum(is.na(taxtable_no_NA$Genus)) #verifying
-
-#Redefining colname in terms of genus
-colnames(otutable_no_NA) <- taxtable_no_NA$Genus
-
-
-#Converting to matrix
-communityData <- as.matrix(otutable_no_NA)
-#Appending numbers to taxa, so no repeats
-for (i in 1: ncol(communityData)) {
-  name_list <- colnames(communityData)
-  name_list[i] <- paste (name_list[i], i)
-  colnames(communityData) <- name_list
-}
-
-
-## Indicspecies structure----
-#Converting Structure column to numeric
-structures <- as.factor(meta$Structure.DNA.Extracted.from)
-structure_levels <- levels(structures)
-
-for (i in 1:length(structure_levels)) {  #Replacing structure names with numeric representative
-  meta$Structure.DNA.Extracted.from[meta$Structure.DNA.Extracted.from == structure_levels[i]] <- i
-}
-structureID_vector <- as.numeric(meta$Structure.DNA.Extracted.from)
-
-#Processing
-indval_struct <- multipatt(communityData, structureID_vector, control = how(nperm = 999))
-
-sink("./Outpuut/Indic_Species_Summary_by_structure.txt")
-summary(indval_struct)
-sink(NULL)
-
-
-#Presenting results
-library(reactable)
-
-#Arranging in a nice table
-indic_results <- indval_struct$sign
-#remove those with associations for all
-indic_results <- indic_results[!(indic_results$index == 15),] #removing all association
-indic_results <- indic_results[indic_results$p.value< 0.05,] #removing insignificant
-
-#Table with species names
-sp_names <- sapply(strsplit(rownames(indic_results), " "), `[`, 1)
-sp_names <- paste(sp_names, "sp.", sep = " ")
-#New df for this task
-ordered_indic <- data.frame(Species = sp_names, indic_results)
-rownames(ordered_indic) <- 1:nrow(ordered_indic)
-#Naming columns after structure
-colnames(ordered_indic)[2:5] <- structure_levels
-#Ordering and subsetting
-ordered_indic <- ordered_indic[order(ordered_indic$index),]
-ordered_indic <- ordered_indic[,c(1:5, 7, 8)] #remove index col
-ordered_indic$stat <- round(ordered_indic$stat, digits = 3)#rounding to 3dp
-
-#Making table with reactable
-tick <- function(value) {
-  if (value == 0) "\u2718"
-  else "\u2713"
-}
-
-reactable(ordered_indic,
-          columns = list(
-            Leaf = colDef(cell = tick),
-            Rhizome = colDef(cell = tick),
-            Root = colDef(cell = tick),
-            Sediment = colDef(cell = tick),
-            stat = colDef(name = "Indicator Value"),
-            p.value = colDef(name = "P-value")),
-          defaultColDef = colDef(align = "center",
-                                 headerStyle = list(background = "#f7f7f8")),
-          bordered = TRUE,
-          defaultPageSize = 50,
-          filterable = TRUE
+## Group 2 (Merambong Shoal)
+# indicators()
+sc <- indicators(X=communityData, cluster=locationID_vector, group = 2,
+                 max.order = 1, verbose = TRUE, 
+                 At=0.5, Bt=0.2,
+                 #nboot.ci = 1000,
 )
-
-
-## Indicspecies location ----
-#Converting Location column to numeric
-locations <- as.factor(meta$Location)
-location_levels <- levels(locations)
-
-for (i in 1:length(location_levels)) {  #Replacing structure names with numeric representative
-  meta$Location[meta$Location == location_levels[i]] <- i
-}
-locationID_vector <- as.numeric(meta$Location)
-
-#Processing
-indval_loc <- multipatt(communityData, locationID_vector, control = how(nperm = 999))
-
-sink("./Outpuut/Indic_Species_Summary_by_location.txt")
-summary(indval_loc)
+print(sc, sqrtIVt = 0.6)
+summary(sc)
+## pruneindicators
+sc2=pruneindicators(sc, At=0.8, Bt=0.2, verbose=TRUE)
+print(sc2)
+sink("../Output/Analysis/IndicSpecies_final.txt", append=TRUE)
+noquote("Merambong Shoal Indicator Species")
+print(sc2)
 sink(NULL)
+## predict.indicators
+p <- predict(sc2, communityData)
+pcv <- predict(sc2, cv=TRUE)
+data.frame(Group2 = locationID_vector, Prob=p, Prob_CV = pcv)
 
-
-#Presenting results
-library(reactable)
-
-#Arranging in a nice table
-indic_results <- indval_loc$sign
-#remove those with associations for all
-indic_results <- indic_results[!(indic_results$index == 127),] #removing all association
-indic_results <- indic_results[indic_results$p.value< 0.05,] #removing insignificant
-
-#Table with species names
-sp_names <- sapply(strsplit(rownames(indic_results), " "), `[`, 1)
-sp_names <- paste(sp_names, "sp.", sep = " ")
-#New df for this task
-ordered_indic <- data.frame(Species = sp_names, indic_results)
-rownames(ordered_indic) <- 1:nrow(ordered_indic)
-#Naming columns after location
-location_levels[c(1,4)] <- c("Chek_Jawa", "Merambong_Shoal") #temporary
-colnames(ordered_indic)[2:8] <- location_levels
-#Ordering and subsetting
-ordered_indic <- ordered_indic[order(ordered_indic$index),]
-ordered_indic <- ordered_indic[,c(1:8, 10, 11)]
-ordered_indic$stat <- round(ordered_indic$stat, digits = 3)#rounding to 3dp
-
-#Making table with reactable
-tick <- function(value) {
-  if (value == 0) "\u2718"
-  else "\u2713"
-}
-
-reactable(ordered_indic,
-          columns = list(
-            Chek_Jawa = colDef(name = "Chek Jawa", cell = tick),
-            Cyrene = colDef(cell = tick),
-            Langkawi = colDef(cell = tick),
-            Merambong_Shoal = colDef(name = "Merambong Shoal", cell = tick),
-            Perhentian = colDef(cell = tick),
-            Semakau = colDef(cell = tick),
-            Sentosa = colDef(cell = tick),
-            stat = colDef(name = "Indicator Value"),
-            p.value = colDef(name = "P-value")),
-          defaultColDef = colDef(align = "center",
-                                 headerStyle = list(background = "#f7f7f8")),
-          bordered = TRUE,
-          defaultPageSize = 50,
-          filterable = TRUE
+## Group 3 (Perhentian Island)
+# indicators()
+sc <- indicators(X=communityData, cluster=locationID_vector, group = 3,
+                 max.order = 1, verbose = TRUE, 
+                 At=0.5, Bt=0.2,
+                 #nboot.ci = 1000,
 )
+print(sc, sqrtIVt = 0.6)
+summary(sc)
+## pruneindicators
+sc2=pruneindicators(sc, At=0.8, Bt=0.2, verbose=TRUE)
+print(sc2)
+sink("../Output/Analysis/IndicSpecies_final.txt", append=TRUE)
+noquote("Perhentian Island Indicator Species")
+print(sc2)
+sink(NULL)
+## predict.indicators
+p <- predict(sc2, communityData)
+pcv <- predict(sc2, cv=TRUE)
+data.frame(Group2 = locationID_vector, Prob=p, Prob_CV = pcv)
+
+## Group 4 (Port Dickson)
+# indicators()
+sc <- indicators(X=communityData, cluster=locationID_vector, group = 4,
+                 max.order = 1, verbose = TRUE, 
+                 At=0.5, Bt=0.2,
+                 #nboot.ci = 1000,
+)
+print(sc, sqrtIVt = 0.6)
+summary(sc)
+## pruneindicators
+sc2=pruneindicators(sc, At=0.8, Bt=0.2, verbose=TRUE)
+print(sc2)
+sink("../Output/Analysis/IndicSpecies_final.txt", append=TRUE)
+noquote("Port Dickson Indicator Species")
+print(sc2)
+sink(NULL)
+## predict.indicators
+p <- predict(sc2, communityData)
+pcv <- predict(sc2, cv=TRUE)
+data.frame(Group2 = locationID_vector, Prob=p, Prob_CV = pcv)
+
+## Group 5 (Semakau)
+# indicators()
+sc <- indicators(X=communityData, cluster=locationID_vector, group = 5,
+                 max.order = 1, verbose = TRUE, 
+                 At=0.5, Bt=0.2,
+                 #nboot.ci = 1000,
+)
+print(sc, sqrtIVt = 0.6)
+summary(sc)
+## pruneindicators
+sc2=pruneindicators(sc, At=0.8, Bt=0.2, verbose=TRUE)
+print(sc2)
+sink("../Output/Analysis/IndicSpecies_final.txt", append=TRUE)
+noquote("Semakau Indicator Species")
+print(sc2)
+sink(NULL)
+## predict.indicators
+p <- predict(sc2, communityData)
+pcv <- predict(sc2, cv=TRUE)
+data.frame(Group2 = locationID_vector, Prob=p, Prob_CV = pcv)
+
+## Group 6 (Sentosa)
+# indicators()
+sc <- indicators(X=communityData, cluster=locationID_vector, group = 6,
+                 max.order = 1, verbose = TRUE, 
+                 At=0.5, Bt=0.2,
+                 #nboot.ci = 1000,
+)
+print(sc, sqrtIVt = 0.6)
+summary(sc)
+## pruneindicators
+sc2=pruneindicators(sc, At=0.8, Bt=0.2, verbose=TRUE)
+print(sc2)
+sink("../Output/Analysis/IndicSpecies_final.txt", append=TRUE)
+noquote("Sentosa Indicator Species")
+print(sc2)
+sink(NULL)
+## predict.indicators
+p <- predict(sc2, communityData)
+pcv <- predict(sc2, cv=TRUE)
+data.frame(Group2 = locationID_vector, Prob=p, Prob_CV = pcv)
+
 
 
 
@@ -1422,13 +1310,6 @@ g <- OSD.ctl.gl_net %>%
 
 
 
-### Core Microbiome ###
-
-
-
-
-
-
 ### Supervised Learning ###
 
 
@@ -1443,19 +1324,23 @@ g <- OSD.ctl.gl_net %>%
 ps1_new <- ps1
 taxa_names(ps1_new) <- paste0("ASV", taxa_names(ps1))
 
-## Fitting a Model
-ps1_filtered <- ps1_new %>% 
+ps1_Phylum <- ps1_new %>% 
   tax_glom("Phylum")
-
-ps1_filtered
-tax_table(ps1_filtered)[1:5,]
+ps1_Class <- ps1_new %>% 
+  tax_glom("Class")
+ps1_Order <- ps1_new %>% 
+  tax_glom("Order")
+ps1_Family <- ps1_new %>% 
+  tax_glom("Family")
+ps1_Genus <- ps1_new %>% 
+  tax_glom("Genus")
 
 ## Example
 corncob <- bbdml(formula = ASV32 ~ 1,
                  phi.formula = ~ 1,
                  data = ps1_filtered)
 
-## Interpreting a Model
+# Interpreting a Model
 plot(corncob)
 
 plot(corncob, total = TRUE)
@@ -1463,7 +1348,7 @@ plot(corncob, total = TRUE)
 plot(corncob, total = TRUE, color = "Structure.DNA.Extracted.from")
 plot(corncob, color = "Structure.DNA.Extracted.from")
 
-## Adding covariates
+# Adding covariates
 corncob_structure <- bbdml(formula = ASV32 ~ Structure.DNA.Extracted.from,
                            phi.formula = ~ Structure.DNA.Extracted.from,
                            data = ps1_filtered)
@@ -1476,14 +1361,14 @@ plot(corncob_structure, color = "Structure.DNA.Extracted.from")
 
 plot(corncob_location, color = "Location")
 
-## Model Selection
+# Model Selection
 lrtest(mod_null = corncob, mod = corncob_structure)
 
-## Parameter Interpretation
+# Parameter Interpretation
 summary(corncob_structure)
 summary(corncob_location)
 
-## Analysis for Multiple Taxa
+# Analysis for Multiple Taxa
 set.seed(1)
 da_analysis <- differentialTest(formula = ~ Location,
                                 phi.formula = ~ Location,
@@ -1512,17 +1397,40 @@ da_analysis$p_fdr[1:5]
 
 plot(da_analysis)
 summary(da_analysis)
-###
+
+
+## Actual Analysis
+# Phylum
 set.seed(1)
-da_analysis_loc <- differentialTest(formula = ~ Location,
-                                phi.formula = ~ Location,
+da_analysis_Phylum_Location <- differentialTest(formula = ~ Structure.DNA.Extracted.from,
+                                phi.formula = ~ Structure.DNA.Extracted.from,
                                 formula_null = ~ 1,
-                                phi.formula_null = ~ Location,
+                                phi.formula_null = ~ 1,
                                 test = "Wald", boot = FALSE,
-                                data = ps1_filtered,
+                                data = ps1_Class,
                                 fdr_cutoff = 0.05)
-da_analysis_loc
-da_analysis_loc$significant_taxa
+da_analysis_Phylum_Location$significant_taxa
+
+
+stax_1 <- paste(tax_table(ps1_new)[da_analysis_Phylum_Location$significant_taxa,2:5][1],sep="_")
+stax_1 <- paste(stax_1[1],stax_1[2],stax_1[3],stax_1[4],sep="_")
+stax_2 <- paste(tax_table(ps1_new)[da_analysis_Phylum_Location$significant_taxa,2:5][2],sep="_")
+stax_2 <- paste(stax_2[1],stax_2[2],stax_2[3],stax_2[4],sep="_")
+stax_3 <- paste(tax_table(ps1_new)[da_analysis_Phylum_Location$significant_taxa,2:5][3],sep="_")
+stax_3 <- paste(stax_3[1],stax_3[2],stax_3[3],stax_3[4],sep="_")
+
+names(da_analysis_Phylum_Location$significant_models) <- c(stax_1, stax_2, stax_3)
+
+sink("../Output/Analysis/Differential_abundance_model_stats_tables (Phylum by Location).txt")
+print("Phylum-level taxonomic comparisons...")
+print("No sig. diffs in dispersion for these taxa, but differences in abundance are shown below:")
+da_analysis_Phylum_Location$significant_models
+sink(NULL)
+
+daplot_1 <- plot(da_analysis_Phylum_Location) + labs(y="Differentially abundant families\n(relative abundance)") +
+  theme(axis.text.y = element_text(face="bold.italic"),
+        axis.title.y = element_text(face="bold",size=16),
+        strip.text = element_text(face="bold",size=12))
 
 dv_analysis_loc <- differentialTest(formula = ~ Location,
                                 phi.formula = ~ Location,
