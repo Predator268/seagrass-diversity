@@ -1,0 +1,28 @@
+[1] "PermANOVA Table:"
+[1] PermANOVA Table:
+
+Call:
+adonis(formula = otu ~ Structure * Location, data = df) 
+
+Permutation: free
+Number of permutations: 999
+
+Terms added sequentially (first to last)
+
+                    Df SumsOfSqs MeanSqs F.Model      R2 Pr(>F)    
+Structure            3    19.716  6.5719 26.5450 0.18331  0.001 ***
+Location             5     9.853  1.9706  7.9598 0.09161  0.001 ***
+Structure:Location  15    25.251  1.6834  6.7995 0.23477  0.001 ***
+Residuals          213    52.734  0.2476         0.49030           
+Total              236   107.553                 1.00000           
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+[1] "Pairwise adonis between structures (Bonferroni corrected Pvalues):"
+[1] Pairwise adonis between structures (Bonferroni corrected Pvalues):
+                pairs   F.Model         R2 p.value p.adjusted
+1     Leaf vs Rhizome 11.069604 0.08780549   0.001      0.006
+2        Leaf vs Root 17.144597 0.12876675   0.001      0.006
+3    Leaf vs Sediment 25.491001 0.18015987   0.001      0.006
+4     Rhizome vs Root  9.650816 0.07620019   0.001      0.006
+5 Rhizome vs Sediment 18.349736 0.13557275   0.001      0.006
+6    Root vs Sediment 25.124131 0.17554085   0.001      0.006

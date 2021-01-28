@@ -1,0 +1,681 @@
+[1] "Output of IndicSpecies grouped according to Location where Cyrene = 1, Merambong Shoal = 2, Perhential Island = 3, Port Dickson = 4, Semakau = 5, and Sentosa = 6"
+[1] Output of IndicSpecies grouped according to Location where Cyrene = 1, Merambong Shoal = 2, Perhential Island = 3, Port Dickson = 4, Semakau = 5, and Sentosa = 6
+
+ Multilevel pattern analysis
+ ---------------------------
+
+ Association function: IndVal.g
+ Significance level (alpha): 0.05
+
+ Total number of species: 611
+ Selected number of species: 505 
+ Number of species associated to 1 group: 141 
+ Number of species associated to 2 groups: 194 
+ Number of species associated to 3 groups: 106 
+ Number of species associated to 4 groups: 52 
+ Number of species associated to 5 groups: 12 
+
+ List of species associated to each combination: 
+
+ Group 1  #sps.  13 
+                                  stat p.value    
+Cellulosilyticum__188            0.593   0.001 ***
+Clostridium_sensu_stricto_1__368 0.501   0.001 ***
+Staphylococcus__890              0.491   0.001 ***
+Zeaxanthinibacter__1480          0.453   0.001 ***
+Natranaerovirga__148             0.450   0.002 ** 
+Clostridium_sensu_stricto_1__757 0.445   0.001 ***
+Pir4_lineage__922                0.439   0.001 ***
+Terrisporobacter__1204           0.415   0.001 ***
+Sva0996_marine_group__1537       0.401   0.001 ***
+Blastopirellula__1132            0.400   0.001 ***
+ZOR0006__1850                    0.396   0.004 ** 
+Blastopirellula__1288            0.367   0.002 ** 
+Rubripirellula__281              0.332   0.014 *  
+
+ Group 2  #sps.  24 
+                                stat p.value    
+Vibrio__7                      0.827   0.001 ***
+Photobacterium__61             0.701   0.001 ***
+Malaciobacter__160             0.649   0.001 ***
+Malaciobacter__161             0.612   0.001 ***
+Lutimonas__262                 0.546   0.001 ***
+Sva0996_marine_group__373      0.516   0.001 ***
+Vibrio__516                    0.492   0.001 ***
+BBMC-4__173                    0.488   0.001 ***
+Desulfobulbus__306             0.487   0.001 ***
+Desulfatitalea__28             0.479   0.001 ***
+Amphritea__464                 0.478   0.001 ***
+Vibrio__85                     0.472   0.001 ***
+Halarcobacter__163             0.472   0.001 ***
+Sulfurimonas__123              0.460   0.001 ***
+Thalassospira__1238            0.443   0.001 ***
+Candidatus_Nitrosopumilus__474 0.436   0.001 ***
+Muricauda__682                 0.431   0.001 ***
+Tenacibaculum__696             0.428   0.001 ***
+Candidatus_Nitrosopumilus__270 0.418   0.004 ** 
+Desulfobulbus__309             0.412   0.001 ***
+Candidatus_Thiodiazotropha__20 0.412   0.004 ** 
+Shimia__274                    0.400   0.001 ***
+Pseudomonas__278               0.400   0.001 ***
+Caldithrix__690                0.395   0.014 *  
+
+ Group 3  #sps.  27 
+                                                   stat p.value    
+Halomonas__32                                     0.721   0.001 ***
+Pseudovibrio__18085                               0.632   0.001 ***
+Reinekea__720                                     0.624   0.001 ***
+Vibrio__553                                       0.527   0.001 ***
+Mycobacterium__2528                               0.525   0.001 ***
+Burkholderia-Caballeronia-Paraburkholderia__18108 0.523   0.001 ***
+Defluviicoccus__18114                             0.519   0.001 ***
+Endothiovibrio__18167                             0.511   0.001 ***
+Tistlia__5544                                     0.510   0.001 ***
+Desulfomonile__2139                               0.508   0.001 ***
+Candidatus_Alysiosphaera__18104                   0.507   0.001 ***
+Halodesulfovibrio__783                            0.496   0.001 ***
+Tistlia__18089                                    0.487   0.001 ***
+Alkaliphilus__3942                                0.485   0.001 ***
+Pseudobacteriovorax__398                          0.482   0.001 ***
+Propionigenium__1868                              0.474   0.001 ***
+Cyanobium_PCC-6307__18202                         0.469   0.001 ***
+Photobacterium__581                               0.462   0.001 ***
+Sva0081_sediment_group__4915                      0.452   0.001 ***
+Tistlia__2650                                     0.448   0.001 ***
+Neptuniibacter__1134                              0.425   0.002 ** 
+Subgroup_10__18444                                0.420   0.001 ***
+Synechococcus_MBIC10613__11593                    0.416   0.001 ***
+JdFR-76__2077                                     0.416   0.001 ***
+Desulfomonile__1317                               0.410   0.001 ***
+Desulfatitalea__1129                              0.393   0.002 ** 
+Pseudobacteriovorax__1681                         0.380   0.016 *  
+
+ Group 4  #sps.  16 
+                              stat p.value    
+Hyphomonas__625              0.624   0.001 ***
+Desulfatiglans__852          0.492   0.001 ***
+Pir4_lineage__130            0.479   0.001 ***
+Cohaesibacter__497           0.458   0.001 ***
+RBG-16-49-21__442            0.441   0.001 ***
+Desulfatiglans__801          0.436   0.001 ***
+Kordia__1454                 0.430   0.002 ** 
+Spongiibacter__1035          0.409   0.001 ***
+Woeseia__411                 0.407   0.001 ***
+Rhodopirellula__971          0.391   0.001 ***
+Spirochaeta__818             0.381   0.001 ***
+Pir4_lineage__680            0.381   0.001 ***
+Thiohalophilus__628          0.372   0.001 ***
+Pir4_lineage__582            0.372   0.002 ** 
+Altererythrobacter__2191     0.366   0.002 ** 
+Synechococcus_PCC-7336__1365 0.322   0.036 *  
+
+ Group 5  #sps.  38 
+                                          stat p.value    
+Vibrio__12                               0.670   0.001 ***
+Epulopiscium__620                        0.550   0.001 ***
+Actibacter__6404                         0.468   0.001 ***
+Rhodopirellula__7335                     0.464   0.001 ***
+Endothiovibrio__18111                    0.461   0.001 ***
+Spirochaeta_2__9706                      0.461   0.001 ***
+CI75cm.2.12__6865                        0.455   0.001 ***
+Chroococcidiopsis_PCC-6712__6690         0.446   0.001 ***
+Subgroup_10__8214                        0.441   0.001 ***
+Cenarchaeum__4256                        0.437   0.001 ***
+Rubripirellula__2279                     0.436   0.001 ***
+Sva0081_sediment_group__1199             0.429   0.001 ***
+IheB3-7__7230                            0.426   0.001 ***
+Caldithrix__5042                         0.424   0.001 ***
+Pirellula__5012                          0.422   0.001 ***
+Woeseia__3484                            0.422   0.001 ***
+Desulfatiglans__2102                     0.420   0.001 ***
+Sva0081_sediment_group__2248             0.420   0.001 ***
+Ignavibacterium__2197                    0.413   0.001 ***
+Nitrospira__6500                         0.412   0.001 ***
+Rhodopirellula__2828                     0.410   0.001 ***
+Thalassotalea__1843                      0.406   0.002 ** 
+Subgroup_10__3503                        0.404   0.001 ***
+Natranaerovirga__911                     0.397   0.010 ** 
+Blastopirellula__1329                    0.391   0.001 ***
+Woeseia__1389                            0.391   0.001 ***
+Izimaplasma__4905                        0.384   0.001 ***
+Fulvivirga__4027                         0.382   0.001 ***
+Urania-1B-19_marine_sediment_group__3949 0.371   0.002 ** 
+Pir4_lineage__3183                       0.370   0.005 ** 
+Spirochaeta__3748                        0.368   0.002 ** 
+Pelagibius__1450                         0.365   0.002 ** 
+Sedimenticola__3384                      0.356   0.002 ** 
+oc32__1077                               0.350   0.001 ***
+Blastopirellula__3386                    0.341   0.007 ** 
+Rhodopirellula__3088                     0.339   0.007 ** 
+Candidatus_Latescibacter__6320           0.330   0.009 ** 
+Pelolinea__7057                          0.312   0.021 *  
+
+ Group 6  #sps.  23 
+                            stat p.value    
+Dokdonia__972              0.688   0.001 ***
+Sulfurovum__27             0.503   0.001 ***
+Desulfobulbus__379         0.500   0.001 ***
+Pleurocapsa_PCC-7319__532  0.497   0.001 ***
+Desulfofustis__369         0.491   0.001 ***
+Ulvibacter__1697           0.488   0.001 ***
+Desulforhopalus__693       0.471   0.001 ***
+Sulfurovum__300            0.450   0.001 ***
+Magnetovibrio__272         0.449   0.004 ** 
+Maritimimonas__864         0.447   0.001 ***
+Pirellula__909             0.440   0.001 ***
+Sulfurovum__686            0.439   0.001 ***
+Bryobacter__1686           0.426   0.001 ***
+Ilumatobacter__946         0.406   0.001 ***
+Desulfobulbus__1821        0.400   0.001 ***
+Spirochaeta__1422          0.399   0.001 ***
+Thiohalophilus__522        0.393   0.002 ** 
+Candidatus_Thiobios__257   0.391   0.002 ** 
+Desulfobulbus__889         0.386   0.002 ** 
+Pirellula__1357            0.382   0.002 ** 
+Desulfatiglans__1373       0.343   0.005 ** 
+Sva0996_marine_group__1138 0.340   0.004 ** 
+Sediminispirochaeta__2402  0.328   0.010 ** 
+
+ Group 1+2  #sps.  2 
+                    stat p.value  
+RBG-16-49-21__853  0.370   0.014 *
+Desulfomonile__962 0.325   0.015 *
+
+ Group 1+3  #sps.  12 
+                           stat p.value    
+Blastopirellula__330      0.490   0.001 ***
+Blastopirellula__1014     0.469   0.001 ***
+Pir4_lineage__1481        0.453   0.001 ***
+Sva0996_marine_group__491 0.411   0.002 ** 
+Ilumatobacter__2012       0.398   0.001 ***
+Pir4_lineage__2477        0.390   0.001 ***
+Blastopirellula__3204     0.388   0.001 ***
+Blastopirellula__3319     0.375   0.002 ** 
+Paramaledivibacter__3255  0.372   0.007 ** 
+Pirellula__2323           0.366   0.006 ** 
+Tepidibacter__3588        0.351   0.004 ** 
+Desulfomonile__4111       0.331   0.003 ** 
+
+ Group 1+4  #sps.  2 
+                 stat p.value   
+3PJM14__1152    0.351   0.004 **
+Parahaliea__997 0.333   0.005 **
+
+ Group 1+5  #sps.  20 
+                                         stat p.value    
+SZB85__239                              0.478   0.001 ***
+Rhodopirellula__1558                    0.477   0.001 ***
+Sva0081_sediment_group__564             0.462   0.001 ***
+Desulfofustis__320                      0.461   0.002 ** 
+Blastopirellula__753                    0.437   0.001 ***
+SEEP-SRB1__1196                         0.432   0.001 ***
+Urania-1B-19_marine_sediment_group__714 0.424   0.001 ***
+Rhodopirellula__894                     0.421   0.001 ***
+Rhodopirellula__1519                    0.406   0.001 ***
+Pir4_lineage__1749                      0.391   0.003 ** 
+Pir4_lineage__3248                      0.388   0.001 ***
+Sva0996_marine_group__1110              0.386   0.005 ** 
+Pir4_lineage__811                       0.383   0.005 ** 
+Rubripirellula__838                     0.373   0.001 ***
+Pirellula__2867                         0.361   0.013 *  
+Rhodopirellula__2622                    0.357   0.003 ** 
+Blastopirellula__3549                   0.350   0.006 ** 
+Pelolinea__1531                         0.350   0.008 ** 
+Pir4_lineage__5565                      0.335   0.005 ** 
+Sva0081_sediment_group__381             0.330   0.038 *  
+
+ Group 1+6  #sps.  5 
+                           stat p.value    
+Desulfofustis__242        0.469   0.001 ***
+Bythopirellula__440       0.457   0.001 ***
+Pirellula__232            0.439   0.001 ***
+Sva0996_marine_group__845 0.395   0.002 ** 
+Caldithrix__1518          0.394   0.006 ** 
+
+ Group 2+3  #sps.  3 
+                      stat p.value    
+Rhodomicrobium__457  0.418   0.001 ***
+Perspicuibacter__206 0.416   0.009 ** 
+JdFR-76__1604        0.322   0.026 *  
+
+ Group 2+4  #sps.  12 
+                     stat p.value    
+Actibacter__141     0.548   0.001 ***
+Woeseia__65         0.532   0.001 ***
+Lutimonas__183      0.513   0.001 ***
+Salinirepens__362   0.468   0.001 ***
+Lewinella__623      0.461   0.001 ***
+Teredinibacter__313 0.456   0.001 ***
+AqS1__743           0.401   0.001 ***
+Halioglobus__649    0.394   0.001 ***
+Woeseia__359        0.387   0.001 ***
+Woeseia__709        0.387   0.001 ***
+Aliikangiella__1602 0.379   0.002 ** 
+Caldithrix__1729    0.331   0.009 ** 
+
+ Group 2+5  #sps.  21 
+                                stat p.value    
+Photobacterium__11             0.751   0.001 ***
+Vibrio__443                    0.559   0.001 ***
+Candidatus_Nitrosopumilus__187 0.467   0.001 ***
+Sulfurimonas__304              0.465   0.001 ***
+MSBL7__584                     0.464   0.001 ***
+Sulfurimonas__1099             0.439   0.001 ***
+Woeseia__966                   0.433   0.001 ***
+Persicobacter__1803            0.426   0.003 ** 
+R76-B128__1009                 0.418   0.001 ***
+Subgroup_10__3877              0.418   0.001 ***
+Sulfurimonas__2432             0.403   0.001 ***
+Portibacter__6307              0.387   0.001 ***
+Sulfurovum__548                0.379   0.002 ** 
+Parahaliea__1382               0.371   0.001 ***
+MSBL7__1852                    0.364   0.003 ** 
+Pirellula__3238                0.363   0.001 ***
+Pelagibius__4801               0.352   0.001 ***
+endosymbionts__4567            0.344   0.003 ** 
+R76-B128__1505                 0.344   0.001 ***
+Desulfosarcina__1137           0.336   0.015 *  
+R76-B128__1648                 0.324   0.023 *  
+
+ Group 2+6  #sps.  4 
+                    stat p.value    
+Thalassotalea__365 0.545   0.001 ***
+Labrenzia__643     0.392   0.002 ** 
+Vibrio__258        0.387   0.007 ** 
+Aquimarina__1419   0.315   0.015 *  
+
+ Group 3+4  #sps.  8 
+                                stat p.value    
+Sva0081_sediment_group__110    0.493   0.001 ***
+Candidatus_Thiodiazotropha__58 0.440   0.001 ***
+Pelagibius__805                0.367   0.002 ** 
+Ilumatobacter__2591            0.364   0.001 ***
+Sva0996_marine_group__1788     0.357   0.005 ** 
+SEEP-SRB1__1082                0.333   0.007 ** 
+Desulfatiglans__3393           0.330   0.020 *  
+Desulfomonile__891             0.307   0.022 *  
+
+ Group 3+5  #sps.  23 
+                                   stat p.value    
+Defluviitalea__7183               0.500   0.001 ***
+CI75cm.2.12__18088                0.500   0.001 ***
+Endothiovibrio__18100             0.500   0.001 ***
+CI75cm.2.12__1840                 0.496   0.001 ***
+Sedimenticola__4825               0.492   0.001 ***
+Epulopiscium__5551                0.483   0.001 ***
+Sva0081_sediment_group__5430      0.477   0.001 ***
+Dasania__24                       0.477   0.001 ***
+Defluviicoccus__18119             0.474   0.001 ***
+Pelagibius__18129                 0.474   0.001 ***
+CI75cm.2.12__18133                0.474   0.001 ***
+Magnetospira__18121               0.461   0.001 ***
+Endothiovibrio__831               0.461   0.001 ***
+Pelagibius__4983                  0.458   0.001 ***
+Clostridium_sensu_stricto_1__4441 0.421   0.001 ***
+Tistlia__9193                     0.413   0.001 ***
+Turicibacter__12554               0.412   0.001 ***
+CI75cm.2.12__18243                0.403   0.001 ***
+Clostridiisalibacter__5649        0.398   0.001 ***
+Pir4_lineage__18665               0.387   0.001 ***
+Caldithrix__601                   0.376   0.011 *  
+Pirellula__5897                   0.346   0.009 ** 
+SZB85__5405                       0.336   0.030 *  
+
+ Group 3+6  #sps.  4 
+                              stat p.value    
+Sva0081_sediment_group__1842 0.448   0.001 ***
+Subgroup_10__2005            0.427   0.001 ***
+SZB85__60                    0.423   0.009 ** 
+Desulfatitalea__793          0.390   0.001 ***
+
+ Group 4+5  #sps.  33 
+                              stat p.value    
+Sva0081_sediment_group__592  0.498   0.001 ***
+Spirochaeta__1085            0.481   0.001 ***
+Woeseia__305                 0.474   0.001 ***
+Sva0081_sediment_group__158  0.466   0.001 ***
+Woeseia__288                 0.462   0.002 ** 
+Spirochaeta__2250            0.447   0.001 ***
+Spirochaeta_2__630           0.442   0.001 ***
+Rubripirellula__707          0.433   0.001 ***
+Sva0081_sediment_group__1000 0.433   0.001 ***
+Magnetovibrio__1283          0.433   0.001 ***
+Subgroup_10__240             0.428   0.001 ***
+Candidatus_Thiobios__337     0.416   0.001 ***
+Pir4_lineage__1006           0.415   0.001 ***
+Desulfurivibrio__1893        0.414   0.001 ***
+Lutibacter__1744             0.413   0.001 ***
+Spirochaeta__1431            0.410   0.001 ***
+Woeseia__1535                0.409   0.001 ***
+Thiohalophilus__1564         0.403   0.002 ** 
+Blastopirellula__4011        0.403   0.001 ***
+Rhodopirellula__1933         0.402   0.001 ***
+Pirellula__1560              0.401   0.002 ** 
+P3OB-42__2446                0.388   0.001 ***
+Woeseia__931                 0.387   0.001 ***
+Thermomarinilinea__4583      0.387   0.001 ***
+Rhodopirellula__2593         0.384   0.001 ***
+Desulfatiglans__796          0.384   0.001 ***
+Desulfatiglans__692          0.380   0.009 ** 
+Blastopirellula__956         0.367   0.050 *  
+SEEP-SRB1__6306              0.367   0.006 ** 
+Subgroup_10__2722            0.363   0.001 ***
+Spirochaeta__5948            0.343   0.003 ** 
+Desulfosarcina__570          0.336   0.025 *  
+Sva0081_sediment_group__884  0.336   0.042 *  
+
+ Group 4+6  #sps.  7 
+                                stat p.value    
+Altererythrobacter__214        0.494   0.001 ***
+Sulfurovum__151                0.481   0.001 ***
+Candidatus_Thiodiazotropha__16 0.422   0.002 ** 
+Rhodopirellula__671            0.403   0.001 ***
+Pleurocapsa_PCC-7319__137      0.372   0.001 ***
+Pseudoalteromonas__325         0.342   0.012 *  
+Hellea__2153                   0.314   0.045 *  
+
+ Group 5+6  #sps.  38 
+                                 stat p.value    
+SEEP-SRB1__897                  0.489   0.001 ***
+Zeaxanthinibacter__452          0.486   0.001 ***
+Spirochaeta__567                0.486   0.001 ***
+Blastopirellula__1397           0.470   0.001 ***
+RBG-16-58-14__448               0.460   0.001 ***
+Sva0081_sediment_group__346     0.456   0.001 ***
+endosymbionts__467              0.450   0.001 ***
+Desulfosarcina__317             0.448   0.001 ***
+Sedimenticola__1133             0.441   0.001 ***
+Aquibacter__1256                0.436   0.001 ***
+Desulfatitalea__333             0.429   0.001 ***
+Caldithrix__4020                0.424   0.001 ***
+Rhodopirellula__2877            0.418   0.001 ***
+Defluviitaleaceae_UCG-011__1764 0.416   0.001 ***
+Blastocatella__2588             0.411   0.001 ***
+Woeseia__1489                   0.408   0.001 ***
+Subgroup_10__1045               0.407   0.001 ***
+Woeseia__1546                   0.406   0.001 ***
+Portibacter__2509               0.405   0.001 ***
+Woeseia__480                    0.401   0.001 ***
+Subgroup_23__2049               0.398   0.001 ***
+Blastopirellula__1352           0.396   0.002 ** 
+MSBL7__1293                     0.392   0.001 ***
+Thiohalophilus__1637            0.392   0.001 ***
+Thermomarinilinea__4253         0.392   0.002 ** 
+Sva0996_marine_group__2035      0.386   0.001 ***
+Sphingorhabdus__4081            0.386   0.001 ***
+Rhodopirellula__1743            0.382   0.002 ** 
+DEV008__2368                    0.370   0.001 ***
+Subgroup_23__1658               0.370   0.001 ***
+Fusibacter__2335                0.369   0.004 ** 
+Candidatus_Nitrosopumilus__821  0.368   0.002 ** 
+Sulfurovum__1525                0.359   0.001 ***
+Lewinella__2316                 0.347   0.002 ** 
+Fusibacter__2529                0.340   0.020 *  
+Rhodopirellula__2100            0.329   0.006 ** 
+Pir4_lineage__1782              0.328   0.011 *  
+Spirochaeta__4946               0.326   0.025 *  
+
+ Group 1+2+4  #sps.  2 
+                          stat p.value   
+Sediminispirochaeta__605 0.461   0.004 **
+Desulfosarcina__253      0.381   0.002 **
+
+ Group 1+2+5  #sps.  2 
+                      stat p.value  
+Blastopirellula__823 0.349   0.015 *
+Photobacterium__759  0.315   0.029 *
+
+ Group 1+2+6  #sps.  4 
+                             stat p.value    
+Tenacibaculum__377          0.434   0.001 ***
+Draconibacterium__875       0.358   0.003 ** 
+Candidatus_Endobugula__1249 0.320   0.027 *  
+Methanobacterium__1762      0.319   0.026 *  
+
+ Group 1+3+4  #sps.  1 
+                            stat p.value  
+Sva0996_marine_group__1060 0.318    0.02 *
+
+ Group 1+3+5  #sps.  6 
+                        stat p.value    
+Endothiovibrio__751    0.470   0.001 ***
+Pir4_lineage__1337     0.430   0.002 ** 
+Plasticicumulans__4652 0.400   0.001 ***
+Filomicrobium__2557    0.389   0.003 ** 
+Romboutsia__1153       0.382   0.005 ** 
+Anderseniella__5299    0.355   0.002 ** 
+
+ Group 1+3+6  #sps.  1 
+                stat p.value   
+Pelolinea__705 0.389   0.005 **
+
+ Group 1+4+5  #sps.  4 
+                            stat p.value    
+Sva0081_sediment_group__53 0.495   0.001 ***
+Sva0996_marine_group__645  0.447   0.001 ***
+Blastopirellula__1089      0.409   0.002 ** 
+Xenococcus_PCC-7305__566   0.400   0.001 ***
+
+ Group 1+4+6  #sps.  2 
+                      stat p.value    
+Natranaerovirga__492 0.446   0.001 ***
+Kushneria__523       0.392   0.003 ** 
+
+ Group 1+5+6  #sps.  9 
+                       stat p.value    
+Epulopiscium__157     0.603   0.001 ***
+Woeseia__267          0.464   0.001 ***
+Pir4_lineage__511     0.449   0.001 ***
+Ilumatobacter__839    0.425   0.001 ***
+Rhodopirellula__1723  0.412   0.001 ***
+Rhodopirellula__1449  0.409   0.043 *  
+Rhodopirellula__1286  0.387   0.002 ** 
+Blastopirellula__2033 0.367   0.004 ** 
+Woeseia__1025         0.342   0.013 *  
+
+ Group 2+3+5  #sps.  5 
+                                stat p.value   
+Vibrio__656                    0.438   0.002 **
+Candidatus_Nitrosopumilus__857 0.406   0.011 * 
+Desulfurivibrio__307           0.405   0.021 * 
+Desulfatitalea__64             0.374   0.043 * 
+Ferrimonas__2093               0.309   0.029 * 
+
+ Group 2+4+5  #sps.  27 
+                                stat p.value    
+Thiohalophilus__296            0.516   0.001 ***
+Calorithrix__182               0.500   0.001 ***
+Woeseia__132                   0.497   0.001 ***
+Candidatus_Nitrosopumilus__134 0.478   0.001 ***
+Sva0081_sediment_group__96     0.473   0.001 ***
+Desulfatiglans__124            0.472   0.001 ***
+Sva0081_sediment_group__439    0.469   0.001 ***
+Subgroup_10__181               0.469   0.012 *  
+Pseudohongiella__810           0.463   0.001 ***
+Woeseia__180                   0.456   0.001 ***
+Thiohalophilus__119            0.442   0.001 ***
+Woeseia__275                   0.442   0.001 ***
+Sva0081_sediment_group__526    0.428   0.001 ***
+Geothermobacter__607           0.418   0.001 ***
+Parahaliea__861                0.388   0.007 ** 
+Halioglobus__586               0.380   0.005 ** 
+Sva0081_sediment_group__626    0.376   0.001 ***
+Halioglobus__1393              0.376   0.001 ***
+Woeseia__865                   0.365   0.001 ***
+Verruc-01__1154                0.350   0.011 *  
+Woeseia__882                   0.342   0.009 ** 
+R76-B128__1122                 0.342   0.006 ** 
+Spirochaeta__3268              0.329   0.010 ** 
+SCGC_AAA164-E04__3531          0.329   0.005 ** 
+Deferrisoma__1765              0.323   0.035 *  
+Blastopirellula__1563          0.321   0.045 *  
+Nitrospira__1970               0.310   0.028 *  
+
+ Group 2+4+6  #sps.  6 
+                     stat p.value    
+Desulfatitalea__8   0.504   0.001 ***
+Sulfurimonas__229   0.403   0.007 ** 
+Sulfurovum__472     0.377   0.002 ** 
+Endothiovibrio__539 0.374   0.005 ** 
+Anderseniella__407  0.366   0.007 ** 
+Ruegeria__441       0.344   0.014 *  
+
+ Group 2+5+6  #sps.  12 
+                        stat p.value    
+Sulfurimonas__73       0.508   0.001 ***
+Woeseia__129           0.454   0.001 ***
+Sulfurimonas__493      0.451   0.001 ***
+Sulfurovum__156        0.449   0.001 ***
+Silicimonas__588       0.445   0.001 ***
+Sulfurimonas__766      0.435   0.001 ***
+Desulfopila__632       0.402   0.004 ** 
+Sulfurimonas__465      0.395   0.002 ** 
+Pseudoalteromonas__223 0.369   0.048 *  
+Pseudoalteromonas__843 0.344   0.007 ** 
+Photobacterium__977    0.319   0.013 *  
+Sulfurimonas__1668     0.302   0.042 *  
+
+ Group 3+4+5  #sps.  6 
+                             stat p.value    
+Sva0081_sediment_group__174 0.447   0.001 ***
+Zeaxanthinibacter__2931     0.440   0.001 ***
+Actibacterium__387          0.430   0.001 ***
+Lewinella__3441             0.370   0.001 ***
+Labrenzia__1108             0.352   0.019 *  
+Aquibacter__2454            0.342   0.046 *  
+
+ Group 3+4+6  #sps.  1 
+                stat p.value   
+Ruegeria__1432 0.368   0.008 **
+
+ Group 3+5+6  #sps.  3 
+                           stat p.value    
+Defluviicoccus__1100      0.505   0.001 ***
+Xenococcus_PCC-7305__2438 0.422   0.002 ** 
+Constrictibacter__1213    0.419   0.001 ***
+
+ Group 4+5+6  #sps.  15 
+                          stat p.value    
+Blastopirellula__94      0.501   0.018 *  
+Caldithrix__534          0.493   0.001 ***
+Anderseniella__475       0.477   0.001 ***
+Rhodopirellula__342      0.460   0.007 ** 
+Subgroup_10__459         0.423   0.005 ** 
+Actibacterium__456       0.421   0.002 ** 
+Sedimenticola__1033      0.414   0.001 ***
+JdFR-76__2334            0.401   0.001 ***
+Deferrisoma__1346        0.384   0.001 ***
+Halioglobus__973         0.375   0.035 *  
+Subgroup_10__1515        0.368   0.005 ** 
+SEEP-SRB1__1039          0.363   0.004 ** 
+Candidatus_Thiobios__726 0.357   0.004 ** 
+Subgroup_23__1366        0.344   0.004 ** 
+NS5_marine_group__5516   0.302   0.045 *  
+
+ Group 1+2+4+5  #sps.  4 
+                          stat p.value    
+Subgroup_10__260         0.462   0.001 ***
+Parahaliea__557          0.427   0.001 ***
+Cyanobium_PCC-6307__1177 0.380   0.006 ** 
+Pirellula__1570          0.336   0.032 *  
+
+ Group 1+2+5+6  #sps.  4 
+                     stat p.value   
+Cohaesibacter__128  0.473   0.004 **
+Rubripirellula__216 0.436   0.002 **
+UCG-012__409        0.419   0.013 * 
+Vibrio__22          0.383   0.011 * 
+
+ Group 1+3+4+5  #sps.  2 
+                           stat p.value    
+Sva0996_marine_group__763 0.456   0.001 ***
+Pseudahrensia__2579       0.327   0.037 *  
+
+ Group 1+3+5+6  #sps.  5 
+                              stat p.value    
+ZOR0006__827                 0.570   0.001 ***
+Xenococcus_PCC-7305__218     0.534   0.001 ***
+Blastopirellula__454         0.461   0.003 ** 
+Natranaerovirga__508         0.428   0.005 ** 
+Synechococcus_PCC-7336__1371 0.415   0.006 ** 
+
+ Group 1+4+5+6  #sps.  5 
+                             stat p.value   
+Pirellula__186              0.517   0.003 **
+Sva0081_sediment_group__31  0.498   0.009 **
+Desulfosarcina__40          0.482   0.003 **
+Sva0081_sediment_group__122 0.423   0.004 **
+Candidatus_Thiosymbion__466 0.422   0.004 **
+
+ Group 2+3+4+5  #sps.  4 
+                                   stat p.value    
+Pseudoalteromonas__2              0.648   0.001 ***
+Sva0081_sediment_group__246       0.464   0.002 ** 
+Candidatus_Endobugula__402        0.376   0.049 *  
+JTB255_marine_benthic_group__1508 0.354   0.022 *  
+
+ Group 2+3+5+6  #sps.  3 
+                                stat p.value    
+Vibrio__5                      0.664   0.001 ***
+Ilyobacter__48                 0.521   0.042 *  
+Candidatus_Thiodiazotropha__47 0.417   0.017 *  
+
+ Group 2+4+5+6  #sps.  20 
+                               stat p.value    
+Vibrio__3                     0.752   0.001 ***
+Candidatus_Thiodiazotropha__1 0.566   0.007 ** 
+Desulfobulbus__81             0.542   0.001 ***
+Sva0081_sediment_group__121   0.509   0.002 ** 
+Sva0081_sediment_group__111   0.506   0.001 ***
+Thiogranum__51                0.503   0.006 ** 
+LCP-80__97                    0.482   0.004 ** 
+Pseudoalteromonas__152        0.477   0.001 ***
+Draconibacterium__221         0.477   0.002 ** 
+OM60(NOR5)_clade__349         0.477   0.001 ***
+MSBL7__372                    0.473   0.002 ** 
+Subgroup_23__78               0.467   0.007 ** 
+IS-44__192                    0.464   0.001 ***
+Desulfatiglans__745           0.450   0.001 ***
+Thiohalophilus__57            0.437   0.018 *  
+Woeseia__189                  0.428   0.003 ** 
+Subgroup_10__315              0.413   0.006 ** 
+Zeaxanthinibacter__1041       0.406   0.002 ** 
+SH-PL14__927                  0.403   0.008 ** 
+Propionigenium__106           0.373   0.033 *  
+
+ Group 3+4+5+6  #sps.  5 
+                                  stat p.value    
+Tistlia__779                     0.521   0.001 ***
+LCP-80__172                      0.487   0.001 ***
+Sva0081_sediment_group__145      0.459   0.006 ** 
+Microbulbifer__1019              0.390   0.014 *  
+Chroococcidiopsis_PCC-6712__1471 0.356   0.015 *  
+
+ Group 1+2+3+4+5  #sps.  1 
+                stat p.value  
+Romboutsia__760 0.47   0.012 *
+
+ Group 1+2+3+5+6  #sps.  1 
+                 stat p.value  
+Marinomonas__13 0.637   0.015 *
+
+ Group 1+2+4+5+6  #sps.  3 
+                               stat p.value   
+Candidatus_Thiodiazotropha__4 0.543   0.017 * 
+Vibrio__49                    0.514   0.004 **
+Rhodopirellula__88            0.499   0.004 **
+
+ Group 1+3+4+5+6  #sps.  4 
+                             stat p.value    
+Blastopirellula__228        0.505   0.036 *  
+CI75cm.2.12__116            0.499   0.001 ***
+SZB85__167                  0.467   0.003 ** 
+Sva0081_sediment_group__120 0.460   0.011 *  
+
+ Group 2+3+4+5+6  #sps.  3 
+                            stat p.value    
+Sva0081_sediment_group__91 0.487   0.001 ***
+Labrenzia__102             0.479   0.029 *  
+IheB3-7__352               0.445   0.035 *  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1 

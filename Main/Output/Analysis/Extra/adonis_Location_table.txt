@@ -1,0 +1,37 @@
+[1] "PermANOVA Table:"
+[1] PermANOVA Table:
+
+Call:
+adonis(formula = otu ~ Location * Structure, data = df) 
+
+Permutation: free
+Number of permutations: 999
+
+Terms added sequentially (first to last)
+
+                    Df SumsOfSqs MeanSqs F.Model      R2 Pr(>F)    
+Location             5     9.830  1.9660  7.9412 0.09140  0.001 ***
+Structure            3    19.739  6.5795 26.5759 0.18352  0.001 ***
+Location:Structure  15    25.251  1.6834  6.7995 0.23477  0.001 ***
+Residuals          213    52.734  0.2476         0.49030           
+Total              236   107.553                 1.00000           
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+[1] "Pairwise adonis between locations (Bonferroni corrected Pvalues):"
+[1] Pairwise adonis between locations (Bonferroni corrected Pvalues):
+                                  pairs  F.Model         R2 p.value p.adjusted
+1             Cyrene vs Merambong Shoal 6.098587 0.07338978   0.001      0.015
+2                Cyrene vs Port Dickson 4.180879 0.05150079   0.001      0.015
+3                     Cyrene vs Semakau 3.342437 0.04160239   0.001      0.015
+4                     Cyrene vs Sentosa 3.186767 0.04075839   0.001      0.015
+5           Cyrene vs Perhentian Island 5.787949 0.06991295   0.001      0.015
+6       Merambong Shoal vs Port Dickson 4.386382 0.05324159   0.001      0.015
+7            Merambong Shoal vs Semakau 4.456622 0.05404807   0.001      0.015
+8            Merambong Shoal vs Sentosa 3.762112 0.04716665   0.001      0.015
+9  Merambong Shoal vs Perhentian Island 7.922165 0.09220164   0.001      0.015
+10              Port Dickson vs Semakau 3.101922 0.03824721   0.001      0.015
+11              Port Dickson vs Sentosa 2.681422 0.03407949   0.002      0.030
+12    Port Dickson vs Perhentian Island 6.285472 0.07457361   0.001      0.015
+13                   Semakau vs Sentosa 2.621459 0.03334279   0.003      0.045
+14         Semakau vs Perhentian Island 5.921033 0.07055481   0.001      0.015
+15         Sentosa vs Perhentian Island 6.044843 0.07367730   0.001      0.015

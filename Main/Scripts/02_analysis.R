@@ -130,6 +130,10 @@ ps1_noOutlier <- prune_samples(div_shannon$Shannon != 0, ps1)
 
 #### Analysis ####
 ps1 <- readRDS("D:/GitHub/Seagrass Diversity/seagrass-diversity/Main/Output/Merged/final_phyloseq_object_noOutlier.RDS")
+# Saving Read Counts of data used in downstream analysis
+final <- rowSums(ps1@otu_table)
+track_decontam <- data.frame(final)
+#write.csv(track_decontam, file = "../Output/Analysis/Final Read Counts.csv", row.names = TRUE)
 # Normalize (relative abundance) ####
 ps1ra <- transform_sample_counts(ps1, function(otu){otu/sum(otu)})
 
